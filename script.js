@@ -20,9 +20,10 @@ const clickColor = function(){
     activeColor = this;
    
     clickedColor[1] = activeColor;
+
         console.log(clickedColor);
-    if(clickedColor[0].className === clickedColor[1].className) {
-            console.log('wygrana');
+    if(clickedColor[0] == clickedColor[1].className) {
+        console.log('wygrana');
         };
             
     
