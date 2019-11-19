@@ -12,7 +12,6 @@ const positionbg = Math.floor(Math.random()*bgColor.length);
 let activeColor = ''; // aktulanie aktywny kolor
 const clickedColor = [bgColor[positionbg]];
 
-const colorMatch = 1;
 let colorResult = 0;
 
 
@@ -20,10 +19,14 @@ const clickColor = function(){
     activeColor = this;
    
     clickedColor[1] = activeColor;
-
-        console.log(clickedColor);
     if(clickedColor[0] == clickedColor[1].className) {
-        console.log('wygrana');
+        colorResult++;
+    if (colorResult == 1) {
+        const endTime = new Date().getTime();
+        const gameTime = Math.round(((endTime - startTime)/1000)*100)/100;
+        alert(`Brawo! Znalazłeś "color" kwadrat w ${gameTime} sekund!`)
+        location.reload();
+    }
         };
             
     
