@@ -11,7 +11,8 @@ const positionbg = Math.floor(Math.random()*bgColor.length);
 
 let activeColor = ''; // aktulanie aktywny kolor
 const clickedColor = [bgColor[positionbg]];
-
+let element = document.getElementById("dupa");
+element.innerHTML = `${bgColor[positionbg]}`;
 let colorResult = 0;
 
 
@@ -24,7 +25,7 @@ const clickColor = function(){
     if (colorResult == 1) {
         const endTime = new Date().getTime();
         const gameTime = Math.round(((endTime - startTime)/1000)*100)/100;
-        alert(`Brawo! Znalazłeś "color" kwadrat w ${gameTime} sekund!`)
+        alert(`Bravo! You found a ${clickedColor[0]} squere in ${gameTime} seconds!`)
         location.reload();
     }
         };
