@@ -27,13 +27,13 @@
   h2 {
     text-align: center;
     line-height: 2em;
-    color: aliceblue;
+    color: rebeccapurple;
     
   }
   
   header {
     grid-area: head;
-    background-color: rgb(53, 44, 44);
+  
   }
   
   main {
@@ -48,26 +48,7 @@
     grid-gap: 15px;
   }
   
-  .figure-one {
-    display:flex;
-    align-items: flex-end;
- 
-  }
-  .figure-two {
-    display:flex;
-    align-items: flex-end;
   
-  }
-  .figure-three {
-    display:flex;
-    align-items: flex-end;
- 
-  }
-  .figure-four {
-    display:flex;
-    align-items: flex-end;
- 
-  }
   
   footer {
     grid-area: foot;
@@ -80,7 +61,7 @@
     
   }
 
-button {
+/* button {
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -144,37 +125,47 @@ button.learn-more:active::before {
   box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
   -webkit-transform: translate3d(0, 0, -1em);
           transform: translate3d(0, 0, -1em);
-}
+} */
 
-.figure {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background: #000;
-  display: flex;
-  align-self: flex-start;
-  margin-left: 6em;
-  margin-top: 4em;
-  
-}  
+ 
   @media (min-width: 900px) {
     section {
         grid-template-columns: repeat(4, 1fr);
       }
   }
   
-.red {
-    background-color: red;
+.cyan {
+    background-color: cyan;
 }
 
-.blue {
-    background-color: blue;
+.magenta {
+    background-color: magenta;
 }
 
 .yellow {
+    color: yellow;
     background-color: yellow;
 }
 
-.green {
-    background-color: green;
+.black {
+    background-color: black;
+}
+
+.firebrick {
+  background-color: firebrick;
+} 
+
+.cadetblue {
+  background-color: cadetblue;
+}
+
+.lime {
+  background-color: lime;
+}
+
+.salmon {
+  background-color: salmon;
+}
+.hidden {
+  background-color: mediumslateblue;
 }
