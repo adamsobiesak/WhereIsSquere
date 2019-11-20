@@ -11,7 +11,7 @@ const positionbg = Math.floor(Math.random()*bgColor.length);
 
 let activeColor = ''; // aktulanie aktywny kolor
 const clickedColor = [bgColor[positionbg]];
-let element = document.getElementById("dupa");
+let element = document.getElementById("color");
 element.innerHTML = `${bgColor[positionbg]}`;
 let colorResult = 0;
 
@@ -25,8 +25,13 @@ const clickColor = function(){
     if (colorResult == 1) {
         const endTime = new Date().getTime();
         const gameTime = Math.round(((endTime - startTime)/1000)*100)/100;
-        alert(`Bravo! You found a ${clickedColor[0]} squere in ${gameTime} seconds!`)
-        location.reload();
+        let scoreo = document.getElementById("score");
+        scoreo.innerHTML = `Bravo! You found a ${clickedColor[0]} squere in ${gameTime} seconds!`;
+        // alert(`Bravo! You found a ${clickedColor[0]} squere in ${gameTime} seconds!`) 
+        setTimeout(function () {
+            location.reload();
+        }, 1000)
+        
     }
         };
             

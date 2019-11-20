@@ -12,8 +12,8 @@
   body {
     display: grid;
     font-family: 'Rubik', sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 1em;
+    line-height: 1.5em;
     grid-template-columns: 1fr;
     grid-template-rows: 50px minmax(200px, 1fr) 50px;
     min-height: 100vh;
@@ -33,7 +33,6 @@
   
   header {
     grid-area: head;
-  
   }
   
   main {
@@ -51,16 +50,19 @@
   
   
   footer {
+    display: flex;
     grid-area: foot;
     background-color: #1A1C22;
+    align-items: center;
+    justify-content: center;
   }
   
-  .score>h2 {
-    text-align: center;
-    color: maroon;
+  .score {
+    font-size: medium;
+    line-height: 1.2em;
+    color: aliceblue;
     
   }
-
 /* button {
   position: relative;
   display: inline-block;
@@ -127,8 +129,9 @@ button.learn-more:active::before {
           transform: translate3d(0, 0, -1em);
 } */
 
- 
+  
   @media (min-width: 900px) {
+    
     section {
         grid-template-columns: repeat(4, 1fr);
       }
